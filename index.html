@@ -80,18 +80,33 @@
       90% { transform: translate(1px, 2px) rotate(0deg); }
       100% { transform: translate(1px, -2px) rotate(-1deg); }
     }
+    .mute-btn {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background: black;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  opacity: 0.8;
+  z-index: 2;
+}
   </style>
 </head>
 <body>
   <div class="container">
     <div class="video-wrapper">
-      <video autoplay loop muted playsinline>
-        <source src="Hakla Shahrukh Khan Meme Template _ Download Link In Comments 🔗.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    </div>
+  <video id="memeVideo" autoplay loop muted playsinline>
+    <source src="hakla.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <button id="muteToggle" class="mute-btn">🔇</button>
+</div>
 
-    <h1 class="glitch">YOU GOT BAITED 🎣</h1>
+<h1 class="glitch">YOU GOT BAITED 🎣</h1>
     <p>
       Thought you were scanning a boring QR code? LOL.<br>
       You're actually here because destiny (and AARAVA) has chosen you. 🤡📚
@@ -109,5 +124,14 @@
       fine print: no refunds on baits. joining Aarava may result in better vocab, occasional public speaking, and unexpected fame.
     </p>
   </div>
+  <script>
+  const video = document.getElementById("memeVideo");
+  const muteBtn = document.getElementById("muteToggle");
+
+  muteBtn.addEventListener("click", () => {
+    video.muted = !video.muted;
+    muteBtn.textContent = video.muted ? "🔇" : "🔊";
+  });
+</script>
 </body>
 </html>
