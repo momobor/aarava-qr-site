@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>gotcha. welcome to AARAVA</title>
+  <style>
+    body {
+      background: #f6f6f6;
+      font-family: 'Courier New', monospace;
+      color: #000;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    .container {
+      padding: 2rem;
+      text-align: center;
+    }
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      margin-bottom: 2rem;
+    }
+    .video-wrapper video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 4px dashed #ff0000;
+      border-radius: 8px;
+    }
+    h1 {
+      font-size: 3rem;
+      margin: 0.5rem 0;
+      color: #ff0000;
+      background: #000;
+      display: inline-block;
+      padding: 0.4rem 1rem;
+      transform: rotate(-2deg);
+    }
+    p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .clutter {
+      font-size: 0.85rem;
+      color: #555;
+      margin-top: 2rem;
+      font-style: italic;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 2rem;
+      background: yellow;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      border: 2px solid black;
+      cursor: pointer;
+      transform: rotate(2deg);
+    }
+    .glitch {
+      animation: glitch 1.5s infinite;
+    }
+    @keyframes glitch {
+      0% { transform: translate(1px, 1px) rotate(0deg); }
+      10% { transform: translate(-1px, -2px) rotate(-1deg); }
+      20% { transform: translate(-3px, 0px) rotate(1deg); }
+      30% { transform: translate(3px, 2px) rotate(0deg); }
+      40% { transform: translate(1px, -1px) rotate(1deg); }
+      50% { transform: translate(-1px, 2px) rotate(-1deg); }
+      60% { transform: translate(-3px, 1px) rotate(0deg); }
+      70% { transform: translate(3px, 1px) rotate(-1deg); }
+      80% { transform: translate(-1px, -1px) rotate(1deg); }
+      90% { transform: translate(1px, 2px) rotate(0deg); }
+      100% { transform: translate(1px, -2px) rotate(-1deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="video-wrapper">
+      <video autoplay loop muted playsinline>
+        <source src="Hakla Shahrukh Khan Meme Template _ Download Link In Comments 🔗.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <h1 class="glitch">YOU GOT BAITED 🎣</h1>
+    <p>
+      Thought you were scanning a boring QR code? LOL.<br>
+      You're actually here because destiny (and AARAVA) has chosen you. 🤡📚
+    </p>
+
+    <p>
+      The English Forum that *actually* makes sense. Memes, drama, debate, chaos — all wrapped in one club.
+    </p>
+
+    <div class="button" onclick="window.location.href='https://example.com/register-aarava'">
+      Register for AARAVA Now 💥
+    </div>
+
+    <p class="clutter">
+      fine print: no refunds on baits. joining Aarava may result in better vocab, occasional public speaking, and unexpected fame.
+    </p>
+  </div>
+</body>
+</html>
